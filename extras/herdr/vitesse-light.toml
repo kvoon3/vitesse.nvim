@@ -1,0 +1,14 @@
+# Herdr theme: Vitesse Light
+# Copy the [theme] section into ~/.config/herdr/config.toml
+# Source: https://github.com/antfu/vscode-theme-vitesse
+
+[theme]
+name = "terminal"
+
+[theme.custom]
+panel_bg = "#ffffff"
+accent = "#1c6b48"
+green = "#1e754f"
+blue = "#296aa3"
+red = "#ab5959"
+yellow = "#bda437"
