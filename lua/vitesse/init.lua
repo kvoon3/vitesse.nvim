@@ -7,19 +7,16 @@ M.styles = {}
 
 ---@param opts? vitesse.Config
 function M.load(opts)
+  local explicit_style = opts and opts.style
   opts = config.extend(opts)
 
-  local style = opts.style
-  local is_light = style == "light" or style == "light_soft"
-  local style_bg = is_light and "light" or "dark"
-
-  if vim.o.background ~= style_bg then
-    if vim.g.colors_name and vim.g.colors_name:find("vitesse") then
-      style = vim.o.background == "light" and (M.styles.light or opts.light_style) or (M.styles.dark or "dark")
-    else
-      vim.o.background = style_bg
-    end
+  local style = explicit_style or opts.style
+  if not explicit_style and vim.o.background == "light" then
+    style = opts.light_style
   end
+
+  local is_light = style == "light" or style == "light_soft"
+  vim.o.background = is_light and "light" or "dark"
   M.styles[vim.o.background] = style
 
   local c = palette.get(style)

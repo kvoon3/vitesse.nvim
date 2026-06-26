@@ -1,1 +1,1 @@
-require("vitesse").load({ style = "dark" })
+require("vitesse").load()
