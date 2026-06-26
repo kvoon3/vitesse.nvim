@@ -64,6 +64,10 @@ This repo also includes theme files for other applications in `extras/`:
 - **Herdr** – copy a file from `extras/herdr/` into `~/.config/herdr/config.toml`
 - **Kitty** – include a file from `extras/kitty/` in `~/.config/kitty/kitty.conf`, or copy it to `~/.config/kitty/themes/` and pick it with `kitty +kitten themes`
 
+## Contributing
+
+See [AGENTS.md](./AGENTS.md) for the theme management workflow.
+
 ## License
 
 MIT
