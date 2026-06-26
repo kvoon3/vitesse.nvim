@@ -41,7 +41,7 @@ Neovim:
 
 ```bash
 for s in vitesse-dark vitesse-light vitesse-black vitesse-dark-soft vitesse-light-soft; do
-  nvim --headless -u NONE -c "set rtp+=~/f/vitesse.nvim" -c "colorscheme $s" -c "qa!" && echo "$s ok"
+  nvim --headless -u NONE -c "set rtp+=$(pwd)" -c "colorscheme $s" -c "qa!" && echo "$s ok"
 done
 ```
 
@@ -59,4 +59,17 @@ herdr server reload-config
 
 ## Local dev
 
-`~/.config/nvim/lua/plugins/vitesse.lua` points to `~/f/vitesse.nvim`. Restart Neovim after edits.
+Point your plugin manager to the local clone, e.g. with lazy.nvim:
+
+```lua
+{
+  dir = "/path/to/vitesse.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme("vitesse-dark")
+  end,
+}
+```
+
+Restart Neovim after edits.
