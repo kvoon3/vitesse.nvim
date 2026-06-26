@@ -2,8 +2,8 @@ local M = {}
 
 ---@class vitesse.Config
 M.defaults = {
-  style = "dark",
-  light_style = "light",
+  style = "black",
+  light_style = "light_soft",
   transparent = false,
   terminal_colors = true,
   styles = {

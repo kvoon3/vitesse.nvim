@@ -27,8 +27,8 @@ Neovim colorscheme ported from [vscode-theme-vitesse](https://github.com/antfu/v
 
 ```lua
 require("vitesse").setup({
-  style = "dark",
-  light_style = "light",
+  style = "black",
+  light_style = "light_soft",
   transparent = false,
   terminal_colors = true,
   styles = {
