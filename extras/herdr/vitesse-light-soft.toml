@@ -2,22 +2,17 @@
 # Source: https://github.com/antfu/vscode-theme-vitesse
 
 [theme]
-name = "terminal"
+name = "catppuccin"
 
 [theme.custom]
 panel_bg = "#F1F0E9"
-surface0 = "#E7E5DB"
-surface1 = "#e8e7df"
-surface_dim = "#dddcd0"
-overlay0 = "#E7E5DB"
-overlay1 = "#F1F0E9"
 text = "#393a34"
 subtext0 = "#4e4f47"
+surface0 = "#E7E5DB"
+surface1 = "#E7E5DB"
+surface_dim = "#dbe5df"
 accent = "#1c6b48"
-mauve = "#a13865"
 green = "#1e754f"
-yellow = "#bda437"
-red = "#ab5959"
 blue = "#296aa3"
-teal = "#2993a3"
-peach = "#a65e2b"
+red = "#ab5959"
+yellow = "#bda437"
