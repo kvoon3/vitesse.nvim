@@ -1,0 +1,3 @@
+[submodule "extras/vscode-theme-vitesse"]
+	path = extras/vscode-theme-vitesse
+	url = https://github.com/antfu/vscode-theme-vitesse.git
