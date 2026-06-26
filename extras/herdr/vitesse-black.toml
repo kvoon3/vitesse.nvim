@@ -1,5 +1,4 @@
 # Herdr theme: Vitesse Black
-# Copy the [theme] section into ~/.config/herdr/config.toml
 # Source: https://github.com/antfu/vscode-theme-vitesse
 
 [theme]
@@ -7,8 +6,18 @@ name = "terminal"
 
 [theme.custom]
 panel_bg = "#000000"
+surface0 = "#121212"
+surface1 = "#1a1a1a"
+surface_dim = "#0a0a0a"
+overlay0 = "#121212"
+overlay1 = "#1a1a1a"
+text = "#dbd7ca"
+subtext0 = "#bfbaaa"
 accent = "#4d9375"
+mauve = "#d9739f"
 green = "#4d9375"
-blue = "#6394bf"
-red = "#cb7676"
 yellow = "#e6cc77"
+red = "#cb7676"
+blue = "#6394bf"
+teal = "#5eaab5"
+peach = "#d4976c"
